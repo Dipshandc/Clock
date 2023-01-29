@@ -227,9 +227,6 @@ function reset(){
     hour.value=null
     minutes.value=null
     second.value=null
-    secStore()
-    minStore()
-    hourStore()
 }
 
 
