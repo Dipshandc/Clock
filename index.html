@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar">
+            <p id="p-timer" onclick="showTimer()">Timer</p>
+            <p id="p-stop" onclick="showStopWatch()">Stop Watch</p>
+        </div>
+        <div class="timer">
+            <div id="timer-div">
+                <input oninput="hourStore()" id="hr" placeholder="Hours"   type="">
+                <!-- <p id="hrp">hr</p> -->
+                <input oninput="minStore()" id="min" placeholder="Minutes"  type="">
+                <!-- <p id="hrp">min</p> -->
+                <input oninput="secStore()" id="sec" placeholder="Seconds" type="">
+                <!-- <p id="hrp">sec</p> -->
+            </div>
+            <div id="timer-time">
+                <p id="timer-p">00:00:00</p>
+            </div>
+            <div id="button">
+                <button id="startbtn" onclick="startTime()">Start</button>
+                <button id="stopbtn" onclick="stop()">Stop</button>
+                <button id="resetbtn" onclick="reset()">Reset</button>
+            </div>
+
+
+
+        </div>
+        <div class="stop-watch">
+            <div id="timeShower">
+                <p id="stop-p">00:00:00</p>
+                <p id="milisec">00</p>
+            </div>
+            <div id="button">
+                <button id="startTimer" onclick="startTimer()">Start</button>
+                <button id="stopTimer" onclick="stopTimer()">Stop</button>
+                <button id="resetTimer" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
+</html>
